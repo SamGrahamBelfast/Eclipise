@@ -73,7 +73,7 @@ public class BreakingNews implements Runnable {
 			
 			
 			if(Thread.currentThread().isInterrupted()) {
-				throw new InterruptedException("This thead has been interrupted, termnating");
+				throw new InterruptedException("This thead has been interrupted, terminating");
 			}
 			
 			if (p.getDay().equals(TODAY) && p.getChannel().equals("ABC1") && p.getStartTIme().isAfter(this.startTime)) {
